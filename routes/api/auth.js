@@ -81,8 +81,7 @@ router.post(
           // If there are any errors creating token throw err
           if (err) throw err;
           else {
-            console.log(token);
-            // res.json({ token });
+            res.json({ token });
           }
         }
       );
