@@ -26,7 +26,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // @route POST api/auth
-// @description Authenticate User and get token
+// @description Authenticate/Login User and get token
 // @access Public
 router.post(
   "/",
@@ -81,7 +81,8 @@ router.post(
           // If there are any errors creating token throw err
           if (err) throw err;
           else {
-            res.json({ token });
+            console.log(token);
+            // res.json({ token });
           }
         }
       );

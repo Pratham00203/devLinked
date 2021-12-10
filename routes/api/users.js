@@ -14,7 +14,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // @route POST api/users
-// @description TEST Route
+// @description Register a user
 // @access Public
 router.post(
   "/",
@@ -90,7 +90,8 @@ router.post(
           // If there are any errors creating token throw err
           if (err) throw err;
           else {
-            res.json({ token });
+            console.log(token);
+            // res.json({token});
           }
         }
       );
