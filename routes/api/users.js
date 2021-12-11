@@ -91,7 +91,7 @@ router.post(
           if (err) throw err;
           else {
             console.log(token);
-            // res.json({token});
+            // res.json({ token });
           }
         }
       );
