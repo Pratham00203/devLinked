@@ -26,6 +26,7 @@ const Register = ({ setAlert }) => {
     e.preventDefault();
     if (password !== password2) {
       setAlert("Passwords do not match", "danger");
+      //returns [ "Passwords do not match","danger","random id: 3874297473"];
     } else {
       console.log("Success");
       // Axios (Redux) used to help save the user in to the database
